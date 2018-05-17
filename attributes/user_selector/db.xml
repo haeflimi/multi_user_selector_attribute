@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="atUserSelector">
+        <field name="avID" type="I" size="11"></field>
+        <field name="userID" type="I" size="11"></field>
+        <index name="avID">
+            <col>avID</col>
+        </index>
+        <index name="userID">
+            <col>userID</col>
+        </index>
+    </table>
+    <table name="atUserSelectorSettings">
+        <field name="akID" type="I" size="11">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="allowMultiple" type="I" size="1">
+            <default value="0"/>
+        </field>
+    </table>
+</schema>
